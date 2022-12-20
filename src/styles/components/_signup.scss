@@ -1,0 +1,360 @@
+.signup {
+  margin: 120px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  .signup-title-signup {
+    font-size: 22px;
+    font-weight: 500;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .signup-progress {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    @media (max-width: 425px) {
+      width: 300px;
+    }
+  }
+
+  .signup-firstform {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    opacity: 1;
+    border-radius: 5px;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 425px) {
+      width: 400px;
+      padding: 5px 10px;
+    }
+    @media (max-width: 402px) {
+      width: 330px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .form-encapsulate-two {
+        display: flex;
+        gap: 10px;
+        @media (max-width: 402px) {
+          align-items: center;
+          justify-content: center;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          input,
+          select {
+            outline: none;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            padding: 5px 10px;
+            width: 190px;
+            cursor: pointer;
+            @media (max-width: 402px) {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+    .formsubmit-next {
+      margin-left: 10px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      padding: 5px 20px;
+      cursor: pointer;
+      background: #0b0809;
+      min-width: 200px;
+      color: #f4f4f4;
+      border-radius: 5px;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+}
+
+.form-other-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+
+    cursor: pointer;
+    @media (max-width: 402px) {
+      width: 250px;
+    }
+  }
+}
+
+.form-other-mailconfirm {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-top: 10px;
+  }
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    @media (max-width: 402px) {
+      width: 250px;
+    }
+  }
+}
+
+.emailconfirm-container {
+  display: flex;
+  margin-top: 10px;
+  @media (max-width: 402px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .emailconfirm-btn {
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    background: #0b0809;
+    color: #f4f4f4;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    @media (max-width: 402px) {
+      width: 250px;
+      margin-left: 0px;
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+
+.signup-secondform {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  opacity: 1;
+  max-width: 420px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .input-filebase {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 40px;
+      //   label {
+      //     display: flex;
+      //     margin-bottom: 0px;
+      //   }
+      .choose-filebase {
+        z-index: 2;
+        opacity: 0;
+      }
+
+      .profil-absolute {
+        width: 60px;
+        position: absolute;
+        height: 60px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    }
+    .container-secondform {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        select {
+          outline: none;
+          border: 1px solid #ccc;
+          font-size: 15px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .signup-secondform-signup {
+      margin-top: 20px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      padding: 5px 20px;
+      cursor: pointer;
+      background: #0b0809;
+      color: #f4f4f4;
+      border-radius: 5px;
+      transition: 0.3s ease-in-out;
+      width: 360px;
+      &:hover {
+        background: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+}
+
+.container-secondform-single-paylib {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-top: 10px;
+  }
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 360px;
+  }
+}
+
+.container-secondform-single-bank-transfert {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  select {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 360px;
+  }
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    // width: 360px;
+  }
+}
+
+.container-secondform-single-sepa {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 360px;
+  }
+}
+
+.container-secondform-single-trc {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 360px;
+  }
+}
+
+.container-secondform-single-alipay {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 360px;
+  }
+}
+
+.container-secondform-single-spb {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 360px;
+  }
+}
+
+.errors-signup {
+  text-align: center;
+  color: #ff0000;
+  margin: 5px 0px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.signup-input-phone {
+  @media (max-width: 402px) {
+    width: 250px;
+  }
+}
+
+.already_have_account {
+  span {
+    @media (max-width: 402px) {
+      font-size: 12px;
+    }
+  }
+}

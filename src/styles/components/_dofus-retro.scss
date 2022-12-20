@@ -1,0 +1,191 @@
+.dofus-retro {
+  .dofus-retro-title {
+    text-align: center;
+    margin-top: 40px;
+    background: #f4f4f4;
+    padding: 5px;
+    opacity: 0.8;
+  }
+
+  table {
+    border-collapse: collapse;
+    // background-color: white;
+    background: #f4f4f4;
+    color: #0b0809;
+    text-align: center;
+
+    thead {
+      // box-shadow: 0 5px 10px #e1e5ee;
+      background: #0b0809;
+      color: #f4f4f4;
+      th {
+        padding: 0.5rem 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+
+        .divider {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          span {
+            font-size: 12px;
+            @media (max-width: 570px) {
+              font-size: 8px;
+            }
+
+            @media (max-width: 478px) {
+              font-size: 7px;
+            }
+
+            @media (max-width: 390px) {
+              font-size: 6px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        @media (max-width: 1069px) {
+          padding: 0.5rem 1rem;
+          font-size: 0.8rem;
+        }
+
+        @media (max-width: 907px) {
+          padding: 0.5rem 0.8rem;
+          font-size: 0.7rem;
+        }
+
+        @media (max-width: 769px) {
+          padding: 0.5rem 0.6rem;
+          font-size: 0.6rem;
+        }
+        @media (max-width: 645px) {
+          padding: 0.3rem 0.4rem;
+          font-size: 0.5rem;
+          font-weight: 400;
+        }
+
+        @media (max-width: 500px) {
+          padding: 0.1rem 0.2rem;
+          font-size: 0.45rem;
+        }
+        @media (max-width: 439px) {
+          padding: 0.1rem;
+          font-size: 0.4rem;
+        }
+        @media (max-width: 376px) {
+          padding: 0rem;
+          font-size: 0.45rem;
+        }
+        @media (max-width: 330px) {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      text-align: center;
+      border: 1px solid #0b0809;
+      transition: 0.4s ease-out;
+
+      &:hover {
+        background: #fddd00;
+        color: #f4f4f4;
+      }
+
+      a {
+        td {
+          border-left: none;
+          border-right: none;
+        }
+      }
+
+      td {
+        padding: 0.5rem;
+        text-transform: capitalize;
+        border-left: 1px solid #0b0809;
+        border-right: 1px solid #0b0809;
+        @media (max-width: 1069px) {
+          // padding: 0.8rem 1rem;
+          font-size: 0.8rem;
+        }
+        @media (max-width: 907px) {
+          // padding: 0.7rem 0.8rem;
+          font-size: 0.7rem;
+        }
+        @media (max-width: 769px) {
+          // padding: 0.5rem 0.6rem;
+          font-size: 0.6rem;
+        }
+
+        @media (max-width: 645px) {
+          padding: 0.3rem 0.4rem;
+          font-size: 0.5rem;
+          font-weight: 400;
+        }
+        @media (max-width: 500px) {
+          padding: 0.1rem 0.2rem;
+          font-size: 0.5rem;
+        }
+        @media (max-width: 439px) {
+          padding: 0.1rem;
+          font-size: 0.5rem;
+        }
+
+        @media (max-width: 403px) {
+          padding: 0rem;
+          font-size: 0.5rem;
+        }
+        @media (max-width: 346px) {
+          padding: 0rem;
+          font-size: 0.45rem;
+        }
+      }
+      .success {
+        color: #34ef47;
+        font-size: 12px;
+        @media (max-width: 478px) {
+          font-size: 10px;
+        }
+        @media (max-width: 448px) {
+          padding: 0px;
+        }
+        @media (max-width: 338px) {
+          font-size: 9px;
+        }
+      }
+      .no-success {
+        color: #ff0000;
+        font-size: 12px;
+        @media (max-width: 478px) {
+          font-size: 10px;
+        }
+        @media (max-width: 448px) {
+          padding: 0px;
+        }
+        @media (max-width: 338px) {
+          font-size: 9px;
+        }
+      }
+      .quickly {
+        color: #1652f0;
+        font-size: 12px;
+        @media (max-width: 478px) {
+          font-size: 10px;
+        }
+        @media (max-width: 448px) {
+          padding: 0px;
+        }
+        @media (max-width: 338px) {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+
+.currency-color {
+  color: #ffc300;
+}

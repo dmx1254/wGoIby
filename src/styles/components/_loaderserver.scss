@@ -1,0 +1,23 @@
+.loaderserver {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f4f4f4;
+  z-index: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .loader-go-gif {
+    z-index: 302;
+    img {
+      width: 120px;
+      height: 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

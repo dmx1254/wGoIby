@@ -1,0 +1,334 @@
+.mysales {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 20px;
+  @media (max-width: 1276px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 695px) {
+    align-items: center;
+  }
+  @media (max-width: 449px) {
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+
+  .mysales-alert {
+    display: flex;
+    // align-items: center;
+    background: #ffcdd2;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 950px;
+    @media (max-width: 695px) {
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    @media (max-width: 380px) {
+      padding: 5px;
+    }
+
+    .mysales-alert-title {
+      color: #ff0000;
+      font-size: 19px;
+      border-radius: 5px;
+      margin-right: 3px;
+      margin-bottom: 10px;
+      @media (max-width: 1006px) {
+        font-size: 16px;
+      }
+      @media (max-width: 380px) {
+        padding: 14px;
+      }
+    }
+    p {
+      font-size: 18px;
+      @media (max-width: 1006px) {
+        font-size: 15px;
+      }
+      @media (max-width: 695px) {
+        margin-top: -20px;
+      }
+      @media (max-width: 422px) {
+        font-size: 13px;
+      }
+      @media (max-width: 380px) {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .mysales-fakes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @media (max-width: 695px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    span {
+      font-size: 18px;
+      background: #ff0000;
+      color: #f4f4f4;
+      padding: 3px;
+      border-radius: 5px;
+      @media (max-width: 695px) {
+        font-size: 16px;
+      }
+      @media (max-width: 380px) {
+        font-size: 14px;
+      }
+    }
+    p {
+      font-size: 19px;
+      @media (max-width: 695px) {
+        font-size: 15px;
+        text-align: center;
+      }
+      @media (max-width: 380px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .mysales-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+    align-self: center;
+    margin: 10px 0px;
+    span {
+      font-size: 18px;
+      background: #0b0809;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #f4f4f4;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .mysales-search {
+    display: flex;
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 24px;
+      top: 12%;
+      left: 1%;
+    }
+    input {
+      font-size: 18px;
+      outline: none;
+      border-radius: 5px;
+      padding: 5px 40px;
+      border: 1px solid#ccc;
+    }
+  }
+  .mysales-total {
+    display: flex;
+    gap: 5px;
+    background: #0b0809;
+    color: #f4f4f4;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    .mysales-total-title {
+      font-size: 18px;
+    }
+
+    .mysales-total-price {
+      font-size: 17px;
+    }
+  }
+  .mysales-table {
+    margin: 40px 0px;
+    width: 100%;
+    @media (max-width: 920px) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 452px) {
+      max-width: 452px;
+      padding: 15px;
+      overflow: auto;
+      margin: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: white;
+      text-align: center;
+      thead {
+        // box-shadow: 0 5px 10px #e1e5ee;
+        background: #0b0809;
+        color: #f4f4f4;
+        th {
+          padding: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          font-size: 0.7rem;
+          font-weight: 500;
+          @media (max-width: 1276px) {
+            padding: 1rem;
+          }
+          @media (max-width: 1022px) {
+            padding: 0.6rem;
+          }
+
+          @media (max-width: 947px) {
+            padding: 0.4rem;
+          }
+
+          @media (max-width: 680px) {
+            padding: 0.3rem;
+            font-size: 0.6rem;
+          }
+
+          @media (max-width: 584px) {
+            font-size: 0.45rem;
+            font-weight: 400;
+            padding: 0.2rem;
+          }
+
+          @media (max-width: 504px) {
+            padding: 0.1rem;
+          }
+          @media (max-width: 452px) {
+            font-size: 0.4rem;
+          }
+          @media (max-width: 449px) {
+            font-size: 0.35rem;
+            font-weight: 400;
+          }
+        }
+      }
+      tbody {
+        tr {
+          text-align: center;
+          border: 1px solid #8080804d;
+          td {
+            padding: 1rem;
+            border: 1px solid #8080804d;
+            font-size: 0.8rem;
+            @media (max-width: 1276px) {
+              padding: 1rem;
+            }
+
+            @media (max-width: 1022px) {
+              padding: 0.6rem;
+            }
+
+            @media (max-width: 947px) {
+              padding: 0.4rem;
+            }
+            @media (max-width: 680px) {
+              padding: 0.3rem;
+            }
+
+            @media (max-width: 616px) {
+              font-size: 0.6rem;
+            }
+
+            @media (max-width: 584px) {
+              padding: 0.2rem;
+            }
+
+            @media (max-width: 504px) {
+              padding: 0.1rem;
+            }
+
+            @media (max-width: 452px) {
+              font-size: 0.55rem;
+              font-weight: 400;
+            }
+
+            @media (max-width: 449px) {
+              font-size: 0.5rem;
+              font-weight: 400;
+            }
+
+            &.success {
+              color: #34ef47;
+              cursor: pointer;
+            }
+            &.no-success {
+              color: #ad0000;
+              cursor: pointer;
+            }
+
+            &.payment-success {
+              color: #1652f0;
+              cursor: pointer;
+            }
+
+            &.pending {
+              color: #fddd00;
+              cursor: pointer;
+            }
+            &.no-pending {
+              color: #129af6;
+              cursor: pointer;
+            }
+            &.dofuskamas {
+              background: #fddd00;
+              color: #f4f4f4;
+            }
+
+            &.dofustouch {
+              background: #f98711;
+              color: #f4f4f4;
+            }
+
+            &.dofusretro {
+              background: #cb011b;
+              color: #f4f4f4;
+            }
+          }
+          .order-sales {
+            min-width: 100px;
+          }
+          //   .amount {
+          //     font-weight: bold;
+          //   }
+        }
+      }
+    }
+  }
+}
+
+.empty-buy {
+  margin-top: 80px;
+  span {
+    font-size: 20px;
+    background: #34ef47;
+    color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  p {
+    margin-top: 22px;
+    font-size: 20px;
+  }
+}
+
+// .details-of-payment{
+//   width: 50px;
+// }
+
+.lorem-nosying {
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  visibility: hidden;
+}
+

@@ -1,0 +1,83 @@
+.footer {
+  width: 100%;
+  background: #0b0809;
+  color: #f4f4f4;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  // margin-top: 60px;
+  position: static;
+  bottom: 0;
+  margin-bottom: 0;
+  @media (max-width: 542px) {
+    flex-direction: column-reverse;
+  }
+
+  div {
+    font-size: 13px;
+    @media (max-width: 458px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 356px) {
+      font-size: 9px;
+      margin-bottom: 3px;
+    }
+  }
+  .footer-bank-payment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .skrill {
+      @media (max-width: 356px) {
+        margin-top: 10px;
+        height: 35px;
+        width: 35px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    .paypal {
+      @media (max-width: 356px) {
+        margin-top: 10px;
+        height: 35px;
+        width: 35px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .payeer {
+      margin-top: 5px;
+      height: 35px;
+      width: 40px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: 356px) {
+        margin-top: 10px;
+        height: 28px;
+        width: 33px;
+      }
+    }
+
+    .bank {
+      margin-top: 5px;
+      height: 35px;
+      width: 40px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: -1px;
+      @media (max-width: 356px) {
+        margin-top: 10px;
+        height: 28px;
+        width: 33px;
+      }
+    }
+  }
+}

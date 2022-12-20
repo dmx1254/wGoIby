@@ -1,0 +1,152 @@
+.signin {
+  margin-top: -8px;
+  &.signin-img {
+    height: calc(100vh - 80px);
+    background: url("../../assets/signinSignup/full-dofus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .signin-title {
+    margin-top: 40px;
+    color: #f4f4f4;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px black;
+    @media (max-width: 700px) {
+      font-size: 24px;
+    }
+    @media (max-width: 280px) {
+      font-size: 20px;
+    }
+  }
+
+  .signin-container {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .signin-container-lock {
+      font-size: 26px;
+      color: #ff04b4;
+      margin-top: 10px;
+    }
+
+    .singnin-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0px 20px;
+      .signin-form-mail {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        label {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        input {
+          outline: none;
+          border-radius: 3px;
+          font-size: 16px;
+          padding: 10px 40px;
+          border: none;
+          transition: 0.2s ease-in-out;
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          &::placeholder {
+            color: #ccc;
+          }
+
+          //   &:focus {
+          //     background: transparent;
+          //   }
+        }
+
+        .signin-form-pass-iconMail {
+          position: absolute;
+          top: 53%;
+          left: 2%;
+          font-size: 24px;
+          color: #ccc;
+        }
+      }
+      .signin-form-pass {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        label {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        input {
+          outline: none;
+          border-radius: 3px;
+          font-size: 16px;
+          padding: 10px 40px;
+          border: none;
+          transition: 0.2s ease-in-out;
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          &::placeholder {
+            color: #ccc;
+          }
+        }
+        .signin-form-pass-iconPass {
+          position: absolute;
+          top: 48%;
+          left: 2%;
+          font-size: 26px;
+          color: #ccc;
+        }
+      }
+      .signin-form-privacy {
+        display: flex;
+        align-items: center;
+
+        .privacy-check {
+          cursor: pointer;
+        }
+        .privacy-condition {
+          margin-left: 5px;
+          font-size: 12px;
+          color: #757575;
+        }
+      }
+
+      .form-login {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: #0b0809;
+        padding: 5px;
+        color: #f4f4f4;
+        cursor: pointer;
+        font-size: 17px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.errors-signin {
+  text-align: center;
+  color: #ff0000;
+  margin: 5px 0px;
+  font-size: 13px;
+  font-weight: bold;
+}

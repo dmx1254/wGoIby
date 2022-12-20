@@ -1,0 +1,275 @@
+.mybalances {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  gap: 20px;
+  @media (max-width: 1134px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 1029px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 627px) {
+    margin-right: 5px;
+  }
+  @media (max-width: 627px) {
+    align-items: center;
+  }
+  @media (max-width: 394px) {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+  .mysales-alert {
+    display: flex;
+    // align-items: center;
+    background: #ffcdd2;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    @media (max-width: 1134px) {
+      max-width: 700px;
+      flex-direction: column;
+    }
+    @media (max-width: 627px) {
+      max-width: 400px;
+    }
+    @media (max-width: 399px) {
+      max-width: 300px;
+    }
+    @media (max-width: 394px) {
+      padding: 7px;
+    }
+    .mysales-alert-title {
+      color: #ff0000;
+      font-size: 19px;
+      border-radius: 5px;
+      margin-right: 3px;
+      @media (max-width: 627px) {
+        font-size: 16px;
+      }
+    }
+    p {
+      font-size: 18px;
+      @media (max-width: 1134px) {
+        font-size: 16px;
+      }
+      @media (max-width: 627px) {
+        font-size: 14px;
+        margin-top: -5px;
+      }
+    }
+  }
+  .mysales-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+    align-self: center;
+    margin: 10px 0px;
+    span {
+      font-size: 18px;
+      background: #0b0809;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #f4f4f4;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .mysales-search {
+    display: flex;
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 24px;
+      top: 12%;
+      left: 1%;
+    }
+    input {
+      font-size: 18px;
+      outline: none;
+      border-radius: 5px;
+      padding: 5px 40px;
+      border: 1px solid#ccc;
+    }
+  }
+  .mysales-total {
+    display: flex;
+    gap: 5px;
+    background: #0b0809;
+    color: #f4f4f4;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    .mysales-total-title {
+      font-size: 18px;
+    }
+
+    .mysales-total-price {
+      font-size: 17px;
+    }
+  }
+  .mysales-table {
+    margin: 40px 0px;
+    width: 100%;
+
+    @media (max-width: 750px) {
+      margin-left: 20px;
+    }
+
+    @media (max-width: 373px) {
+      margin-left: 8px;
+    }
+
+    // @media (max-width: 353px) {
+    //   margin-left: 10px;
+    // }
+
+    table {
+      border-collapse: collapse;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: white;
+      text-align: center;
+      margin-right: 10px;
+      thead {
+        // box-shadow: 0 5px 10px #e1e5ee;
+        background: #0b0809;
+        color: #f4f4f4;
+        th {
+          padding: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          font-size: 0.8rem;
+          font-weight: 500;
+          @media (max-width: 1276px) {
+            padding: 0.8rem;
+          }
+          @media (max-width: 1029px) {
+            font-size: 0.7rem;
+          }
+          @media (max-width: 980px) {
+            font-size: 0.7rem;
+          }
+
+          @media (max-width: 750px) {
+            font-size: 0.6rem;
+            padding: 0.6rem;
+          }
+
+          @media (max-width: 675px) {
+            padding: 0.5rem;
+            font-size: 0.55rem;
+          }
+
+          @media (max-width: 634px) {
+            padding: 0.2rem 0.1rem;
+            font-size: 0.45rem;
+          }
+        }
+      }
+      tbody {
+        tr {
+          text-align: center;
+          border: 1px solid #8080804d;
+          td {
+            padding: 0.8rem;
+            border: 1px solid #8080804d;
+            font-size: 0.9rem;
+            @media (max-width: 1276px) {
+              padding: 0.8rem;
+            }
+            @media (max-width: 1029px) {
+              font-size: 0.7rem;
+            }
+            @media (max-width: 980px) {
+              font-size: 0.7rem;
+            }
+
+            // .details-of-payment{
+            //   @media (max-width: 748px) {
+            //     display: flex;
+            //     max-width: 30px;
+            //   }
+            // }
+
+            @media (max-width: 750px) {
+              padding: 0.6rem;
+            }
+
+            @media (max-width: 675px) {
+              padding: 0.5rem;
+            }
+
+            @media (max-width: 634px) {
+              padding: 0.2rem 0rem;
+              font-size: 0.6rem;
+            }
+
+            &.success {
+              color: #34ef47;
+              cursor: pointer;
+            }
+            &.no-success {
+              color: #ad0000;
+              cursor: pointer;
+            }
+
+            &.pending {
+              color: #fddd00;
+              cursor: pointer;
+            }
+            &.no-pending {
+              color: #129af6;
+              cursor: pointer;
+            }
+            &.dofuskamas {
+              background: #1652f0;
+              color: #f4f4f4;
+            }
+
+            &.dofustouch {
+              background: #7216da;
+              color: #f4f4f4;
+            }
+
+            &.dofusretro {
+              background: #0d2753;
+              color: #f4f4f4;
+            }
+          }
+          //   .amount {
+          //     font-weight: bold;
+          //   }
+        }
+      }
+    }
+  }
+}
+
+.empty-buy {
+  margin-top: 80px;
+  span {
+    font-size: 20px;
+    background: #34ef47;
+    color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  p {
+    margin-top: 22px;
+    font-size: 20px;
+  }
+}
+
+.lorem-nosying {
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  visibility: hidden;
+}
+

@@ -1,0 +1,334 @@
+.myexchanges {
+  margin-left: 20px;
+  display: flex;
+  margin-right: 20px;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-width: 1039px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 926px) {
+    align-items: center;
+  }
+  @media (max-width: 945px) {
+    margin-left: 5px;
+  }
+
+  .mysales-alert {
+    display: flex;
+    // align-items: center;
+    background: #ffcdd2;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 900px;
+    @media (max-width: 1039px) {
+      max-width: 800px;
+    }
+    @media (max-width: 969px) {
+      flex-direction: column;
+      max-width: 500px;
+    }
+
+    .mysales-alert-title {
+      color: #ff0000;
+      font-size: 17px;
+      border-radius: 5px;
+      margin-right: 3px;
+      @media (max-width: 1039px) {
+        font-size: 15px;
+      }
+      @media (max-width: 969px) {
+        font-size: 13px;
+      }
+    }
+    p {
+      font-size: 16px;
+      @media (max-width: 1039px) {
+        font-size: 14px;
+      }
+      @media (max-width: 969px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .mysales-fakes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @media (max-width: 926px) {
+      flex-direction: column;
+    }
+
+    span {
+      font-size: 16px;
+      background: #ff0000;
+      color: #f4f4f4;
+      padding: 3px;
+      border-radius: 5px;
+      @media (max-width: 1039px) {
+        font-size: 15px;
+      }
+    }
+    p {
+      font-size: 19px;
+      @media (max-width: 1039px) {
+        font-size: 16px;
+      }
+      @media (max-width: 926px) {
+        font-size: 13px;
+      }
+    }
+  }
+  .mysales-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+    align-self: center;
+    margin: 10px 0px;
+    span {
+      font-size: 18px;
+      background: #0b0809;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #f4f4f4;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .mysales-search {
+    display: flex;
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 24px;
+      top: 12%;
+      left: 1%;
+    }
+    input {
+      font-size: 18px;
+      outline: none;
+      border-radius: 5px;
+      padding: 5px 40px;
+      border: 1px solid#ccc;
+    }
+  }
+
+  .myexcahnges-table {
+    margin: 40px 0px;
+    width: 100%;
+    @media (max-width: 765px) {
+      margin-left: 14px;
+    }
+    @media(max-width: 741px){
+      
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: white;
+      text-align: center;
+      margin-right: 10px;
+      width: 100%;
+      @media (max-width: 989px) {
+        margin-right: 0px;
+      }
+      @media (max-width: 945px) {
+        margin-right: 0px;
+      }
+
+      thead {
+        background: #0b0809;
+        color: #f4f4f4;
+        th {
+          padding: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          font-size: 0.6rem;
+          font-weight: 400;
+          @media (max-width: 1049px) {
+            padding: 0.6rem;
+            font-size: 0.6rem;
+          }
+
+          @media(max-width: 741px){
+            padding: 0.5rem;
+            font-size: 0.5;
+            font-weight: 400;
+            letter-spacing: 0rem;
+          }
+
+          @media (max-width: 686px) {
+            padding: 0.5rem;
+          }
+          @media (max-width: 668px) {
+            padding: 0.4rem;
+          }
+
+          @media (max-width: 637px) {
+            padding: 0.3rem;
+            font-size: 0.5rem;
+          }
+
+          @media (max-width: 572px) {
+            font-size: 0.4rem;
+          }
+
+          @media (max-width: 528px) {
+            padding: 0.2rem;
+          }
+
+          @media (max-width: 499px) {
+            padding: 0.1rem;
+          }
+
+          @media (max-width: 477px) {
+            padding: 0rem;
+          }
+          @media (max-width: 451px) {
+            font-size: 0.35rem;
+            font-weight: 400;
+          }
+          @media (max-width: 388px) {
+            font-size: 0.33rem;
+          }
+        }
+        .exchange-size {
+          min-width: 160px;
+          @media (max-width: 763px) {
+            min-width: 100px;
+          }
+
+          @media (max-width: 704px) {
+            min-width: 80px;
+          }
+          @media (max-width: 415px) {
+            min-width: 50px;
+          }
+        }
+        @media (max-width: 1039px) {
+          font-size: 0.6rem;
+        }
+        @media (max-width: 989px) {
+          padding: 0.5rem;
+          font-size: 0.5rem;
+        }
+        @media (max-width: 969px) {
+          padding: 0.3rem;
+        }
+        @media (max-width: 947px) {
+          padding: 0.1rem;
+        }
+      }
+      tbody {
+        tr {
+          text-align: center;
+          border: 1px solid #8080804d;
+          td {
+            padding: 0.8rem;
+            border: 1px solid #8080804d;
+            font-size: 0.7rem;
+            @media (max-width: 1049px) {
+              padding: 0.6rem;
+            }
+
+            @media (max-width: 1039px) {
+              font-weight: bold;
+            }
+
+            @media (max-width: 969px) {
+              padding: 0.3rem;
+            }
+
+            @media (max-width: 947px) {
+              padding: 0.1rem;
+            }
+
+            @media(max-width: 741px){
+              padding: 0.5rem;
+              font-size: 0.5;
+              font-weight: 400;
+              letter-spacing: 0rem;
+            }
+
+            @media (max-width: 686px) {
+              padding: 0.4rem;
+            }
+
+            @media (max-width: 668px) {
+              padding: 0.3rem;
+            }
+            @media (max-width: 637px) {
+              padding: 0.3rem;
+            }
+
+            @media (max-width: 608px) {
+              padding: 0.1rem;
+            }
+
+            @media (max-width: 546px) {
+              font-size: 0.45rem;
+              font-weight: 400;
+            }
+
+            @media (max-width: 477px) {
+              padding: 0rem;
+            }
+
+            @media (max-width: 388px) {
+              font-size: 0.43rem;
+            }
+
+            &.success {
+              color: #34ef47;
+              cursor: pointer;
+            }
+            &.no-success {
+              color: #ad0000;
+              cursor: pointer;
+            }
+
+            &.pending {
+              color: #fddd00;
+              cursor: pointer;
+            }
+            &.no-pending {
+              color: #129af6;
+              cursor: pointer;
+            }
+          }
+          //   .amount {
+          //     font-weight: bold;
+          //   }
+        }
+      }
+    }
+  }
+}
+
+.empty-buy {
+  margin-top: 80px;
+  span {
+    font-size: 20px;
+    background: #34ef47;
+    color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  p {
+    margin-top: 22px;
+    font-size: 20px;
+  }
+}
+
+.lorem-nosying {
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  visibility: hidden;
+}
